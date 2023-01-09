@@ -1,5 +1,7 @@
 require 'csv'
 require_relative 'game.rb'
+require_relative 'team.rb'
+require_relative 'game_team.rb'
 
 class StatTracker
   attr_reader :games,
@@ -41,24 +43,6 @@ class StatTracker
       game_teams << GameTeam.new(info)
     end
     game_teams
-  end
-
-  class Team
-    attr_reader :team_id,
-                :franchise_id,
-                :team_name,
-                :abbreviation,
-                :stadium,
-                :link
-                
-    def initialize(info)
-      @team_id = info[:team_id]
-      @franchise_id = info[:franchiseid]
-      @team_name = info[:teamname]
-      @abbreviation = info[:abbreviation]
-      @stadium = info[:stadium]
-      @link = info[:link]
-    end
   end
 
   class GameTeam
