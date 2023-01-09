@@ -1,4 +1,5 @@
 require './lib/stat_tracker'
+require './lib/data_factory'
 
 describe StatTracker do
   let(:game_path){'./data/fixtures/games_i1.csv'}
@@ -11,8 +12,12 @@ describe StatTracker do
       game_teams: game_teams_path
     }}
 
+  # it 'can pull in new data from files' do
+  #   expect(StatTracker.from_csv(locations)).to be_an_instance_of(StatTracker)
+  # end
+
   it 'can pull in new data from files' do
-    expect(StatTracker.from_csv(locations)).to be_an_instance_of(StatTracker)
+    expect(DataFactory.from_csv(locations)).to be_an_instance_of(StatTracker)
   end
 
   describe 'game' do  
