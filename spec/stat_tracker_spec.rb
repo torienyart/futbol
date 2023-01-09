@@ -210,7 +210,7 @@ describe StatTracker do
 
     it 'can produce an array_of_game_teams by season' do
       expect(stat_tracker.array_of_game_teams_by_season("20122013")).to be_an(Array)
-      expect(stat_tracker.array_of_game_teams_by_season("20122013")[0]).to be_a(StatTracker::GameTeam)
+      expect(stat_tracker.array_of_game_teams_by_season("20122013")[0]).to be_a(GameTeam)
     end
 
     it 'can calculate win percentages for coaches and organize them' do
