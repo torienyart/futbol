@@ -1,20 +1,20 @@
 module Helpable
 
-  def game_score_totals_sorted
-    games.map { |game| game.home_goals.to_i + game.away_goals.to_i }.sort
-  end
+  # def game_score_totals_sorted
+  #   games.map { |game| game.home_goals.to_i + game.away_goals.to_i }.sort
+  # end
 
-  def home_wins
-    games.count { |game| game.home_goals.to_i > game.away_goals.to_i }
-  end
+  # def home_wins
+  #   games.count { |game| game.home_goals.to_i > game.away_goals.to_i }
+  # end
 
-  def away_wins
-    games.count { |game| game.away_goals.to_i > game.home_goals.to_i }
-  end
+  # def away_wins
+  #   games.count { |game| game.away_goals.to_i > game.home_goals.to_i }
+  # end
 
-  def tie_games
-    games.count { |game| game.away_goals.to_i == game.home_goals.to_i }
-  end
+  # def tie_games
+  #   games.count { |game| game.away_goals.to_i == game.home_goals.to_i }
+  # end
 
   def goals_per_game(game)
     game.away_goals.to_i + game.home_goals.to_i

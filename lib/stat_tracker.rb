@@ -6,7 +6,7 @@ require_relative 'data_factory'
 require_relative 'modules/helper_methods'
 #would prefer to not make DataFactory the parent... but need to pass SpecHarness (might be worth asking about)
 
-class StatTracker < DataFactory
+class StatTracker < Game
   include Helpable
   attr_reader :games,
               :teams,
@@ -19,25 +19,25 @@ class StatTracker < DataFactory
   end
 
   ## GAME STATISTIC METHODS
-    def highest_total_score
-      game_score_totals_sorted.last
-    end             
+    # def highest_total_score
+    #   game_score_totals_sorted.last
+    # end             
 
-    def lowest_total_score
-      game_score_totals_sorted.first
-    end
+    # def lowest_total_score
+    #   game_score_totals_sorted.first
+    # end
     
-    def percentage_home_wins
-      (home_wins.to_f / games.length).round(2)
-    end
+    # def percentage_home_wins
+    #   (home_wins.to_f / games.length).round(2)
+    # end
 
-    def percentage_visitor_wins
-      (away_wins.to_f / games.length).round(2)
-    end
+    # def percentage_visitor_wins
+    #   (away_wins.to_f / games.length).round(2)
+    # end
 
-    def percentage_ties
-      (tie_games.to_f / games.length).round(2)
-    end
+    # def percentage_ties
+    #   (tie_games.to_f / games.length).round(2)
+    # end
 
     def count_of_games_by_season  
       count_of_games_by_season = {}
