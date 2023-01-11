@@ -1,4 +1,6 @@
+require_relative 'helper_methods'
 module GamesStatsable
+  include Helpable
 
   def highest_total_score
     game_score_totals_sorted.last

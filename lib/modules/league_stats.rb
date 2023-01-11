@@ -1,3 +1,4 @@
+require_relative 'helper_methods'
 module LeagueStatsable
 
    def count_of_teams

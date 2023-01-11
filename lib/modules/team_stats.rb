@@ -1,4 +1,6 @@
+require_relative 'helper_methods'
 module TeamStatsable
+  include Helpable
 
   def team_info(team_id)
     hash = {}
