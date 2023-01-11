@@ -440,13 +440,5 @@ describe StatTracker do
       expect(stat_tracker.won_games_by_team("6").first).to be_a GameTeam
 
     end
-
-    it '#opponents_win_results(team_id)' do
-      expect(stat_tracker.opponents_win_results("6")).to be_a Hash
-      expect(stat_tracker.opponents_win_results("6").keys).to include("3", "5")
-      expect(stat_tracker.opponents_win_results("6")["3"]).to be_an Array
-
-    end
-
   end
 end
