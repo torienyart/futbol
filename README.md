@@ -22,13 +22,17 @@ Ruby 2.7.2 and RSpec 3.12 versions.
 
 ## Testing
 
-A key goal of this project is to utilize Test Driven Development. Since the data set is so large, it was inefficient to use the actual dataset as our test data. Instead, we made up own test data by creating fixture CSV files.
+A key goal of this project is to utilize Test Driven Development. Since the data set is so large, it was inefficient to use the actual dataset as our test data. Instead, we made up own test data by creating fixture CSV files. We also utilized the SimpleCov gem to determine percentage of test coverage.
+
+![Screen Shot 2023-01-11 at 9 38 06 AM](https://user-images.githubusercontent.com/114954379/211873656-9af61d40-b390-4c33-9d70-aa08f554b3e3.png)
 
 ## Authors 
 
 [Tori Enyart](https://github.com/torienyart) ,
 [Bobby Luly](https://github.com/Bobsters986) ,
 [Elle Majors](https://github.com/Elle-M), [Weston Sandfort](https://github.com/sandfortw)
+
+<img width="1170" alt="Screen Shot 2023-01-11 at 9 38 49 AM" src="https://user-images.githubusercontent.com/114954379/211873326-4b4e1dda-892b-49b1-b07d-4d9cea1eb48a.png">
 
 ## Q&A
 
@@ -72,6 +76,8 @@ A key goal of this project is to utilize Test Driven Development. Since the data
 * Elle - Are there any disadvantages to using modules the way we have in our project?
 
 * Weston- Would it be better to integrate the helper method tests within the tests for the main methods?
+
+
 
 
 
