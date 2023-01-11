@@ -1,4 +1,6 @@
+require_relative 'helper_methods'
 module SeasonStatsable
+  include Helpable
 
   def winningest_coach(season)
     coaches_win_percentages_hash(season).sort_by{|k,v| v}.last[0]
